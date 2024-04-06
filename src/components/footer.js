@@ -15,7 +15,7 @@ const Footer = () => {
             </div>
 
             <div className='flex justify-center pb-5'>
-                <span>Site Developed and Managed by <span className='text-blueTick font-bold text-lg'>Kalyan Bikram Adhikari </span> | All Rights Reserved</span>
+                <span>Site Developed and Managed by <span className='text-titleBlue font-bold text-lg'>Kalyan Bikram Adhikari </span> | All Rights Reserved</span>
 
             </div>
         </>

@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion"; // For animations
-import Button from "./button";
+// import nichub from '../../public/assets/images/nichub.png'
+// import facebookClone from '../../public/assets/images/fb-clone.png'
+// import explorelive from '../../public/assets/images/explorelive.png'
+// import shopit from '../../public/assets/images/shopit.jpg'
+// import facebookClone from '../../public/assets/images/fb-clone.png'
+// import facebookClone from '../../public/assets/images/fb-clone.png'
+
+// import Button from "./button";
 
 const Project = () => {
   const [isVisible, setIsVisible] = useState({});
@@ -25,88 +31,108 @@ const Project = () => {
 
   const contents = [
     {
-      pname: "Lorem Ipsum Project",
+      pname: "NIC HUB",
       description:
-        "This project aims to generate dummy text for various purposes using the classic Lorem Ipsum text as a base.",
-      image: '<img src="https://example.com/image.jpg" alt="Project Image">',
+        "NIC Hub is project of NICs. NICs are the groups of stakeholders from diverse backgrounds solving problems together using the tools of improvement science, specifically Plan-Do-Study-Act cycles. As the developer affiliated with the Digital Learning Research Lab at Kathmandu University, I took on the responsibility of crafting and refining the NIC Hub website.  ",
+      imagesrc: '/assets/images/nichub.png',
     },
     {
-      pname: "Lorem Ipsum Project",
+      pname: "Explore Live",
       description:
-        "This project aims to generate dummy text for various purposes using the classic Lorem Ipsum text as a base.",
-      image: '<img src="https://example.com/image.jpg" alt="Project Image">',
+        "exploreLive is a web application that allows users to explore and book home stays online. It is developed using MERN stack and is an interactive web application. It uses stripeJS for online payment and incorporates features such as user authentication, different kinds of filters like filtering home stays by distance, price, etc. ",
+      imagesrc: '/assets/images/explorelive.png'
     },
     {
-      pname: "Lorem Ipsum Project",
+      pname: "Facebook Clone",
       description:
-        "This project aims to generate dummy text for various purposes using the classic Lorem Ipsum text as a base.",
-      image: '<img src="https://example.com/image.jpg" alt="Project Image">',
+        "The Facebook clone project replicates the renowned social media platform, Facebook. This endeavor aims to recreate the familiar UI of Facebook while providing a platform for learning and experimentation.Built using cutting-edge technologies, the frontend of the Facebook clone is crafted with React.js and Tailwind CSS. One of the key features of the Facebook clone is its responsiveness across various devices and screen sizes. Whether accessed from a desktop, laptop, tablet, or smartphone, users can seamlessly navigate and engage with the platform, ensuring an optimal experience regardless of the device being used.",
+      imagesrc: '/assets/images/fb-clone.png',
     },
     {
-      pname: "Lorem Ipsum Project",
+      pname: "Shopit",
       description:
-        "This project aims to generate dummy text for various purposes using the classic Lorem Ipsum text as a base.",
-      image: '<img src="https://example.com/image.jpg" alt="Project Image">',
+        "This project Shopit is a dynamic web-based e-commerce platform designed to provide users with a seamless online shopping experience. This project serves as a comprehensive solution for purchasing a wide range of products conveniently from the comfort of one's own home. At the core of Shopit's functionality lies its integration with Stripe, a leading online payment processing platform. This partnership ensures secure and efficient transactions, allowing users to make purchases with confidence and ease. One of the standout features of Shopit is its interactive feedback system, which provides users with real-time responses based on their actions within the interface. This personalized feedback enhances user engagement and facilitates a more intuitive browsing and shopping experience.s to generate dummy text for various purposes using the classic Lorem Ipsum text as a base.",
+      imagesrc: '/assets/images/shopit.jpg',
     },
     {
-      pname: "Lorem Ipsum Project",
+      pname: "Game Dashboard",
       description:
-        "This project aims to generate dummy text for various purposes using the classic Lorem Ipsum text as a base.",
-      image: '<img src="https://example.com/image.jpg" alt="Project Image">',
+        "The dashboard serves as the main interface for users to interact with the recording game transactions system. It typically includes an overview of key statistics and features. Users can view a history of all past transactions, including details such as transaction type (recharge or deduction), amount, date, and transaction ID. The dashboard is responsive and works well on various devices and screen sizes. Also error handling and feedback to users when errors occur during transactions or other interactions are handled. ",
+      imagesrc: '/assets/images/game.png',
     },
   ];
 
   const projectComponent = (index, pr) => {
     const isEven = index % 2 === 0;
-  
+
     return (
-      <div data-aos-delay={index*400} data-aos={index%2===0?"fade-right":"fade-left"} key={index} className="flex space-x-12 p-16 ">
-  
+      // data-aos={index%2===0?"fade-right":"fade-left"}
+      <div key={index} className="flex   w-full gap-x-12 p-16">
+
         {/* Left component */}
         <div
-       
-          className={`flex-initial w-1/2 flex justify-center project-section ${
-            isEven ? "" : "order-2"
-          }`}
+
+
+          className={`flex-initial w-1/2   flex justify-center project-section ${isEven ? "" : "order-1"
+            }`}
           id={`project-section-${index}`}
         >
-          <img
-            src="assets/images/nichub.png"
-            alt="Project"
-            className="w-full h-auto"
-          />
+          {
+            isVisible[`project-section-${index}`] && (
+              <div
+                data-aos-delay={index * 100}
+                data-aos={isEven ? "fade-right" : "fade-left"}
+              >
+                {<img
+                  src={pr.imagesrc}
+                  alt="Project"
+                  className="w-full h-auto"
+                />}
+              </div>
+            )
+          }
+
         </div>
-  
+
         {/* Right component */}
         <div
-        
-          className={`w-1/2 items-start text-start rounded-lg ${
-            isEven ? "order-2" : ""
-          }`}
+
+
+          className={`w-1/2 items-start  text-start rounded-lg ${isEven ? "order-1" : ""
+            }`}
         >
-          <h2 className="text-[1.25rem] font-semibold">{pr.pname}</h2>
-          <h3 className="text-[1rem] font-thin">{pr.description}</h3>
+
+          {isVisible[`project-section-${index}`] && (
+            <div
+              data-aos-delay={index * 100}
+              data-aos={isEven ? "fade-left" : "fade-right"}
+            >
+              <h2 className="text-[1.4rem] font-semibold text-titleBlue">{pr.pname}</h2>
+              <h3 className="text-[1rem] font-normal text-sm">{pr.description}</h3>
+            </div>
+            
+          )}
         </div>
       </div>
     );
   };
-  
+
 
   return (
-    <section>
-      <div id="project" className="flex pt-16 justify-center my-5 lg:py-8">
+    <section className="">
+      <div id="project" className="flex pt-16 justify-center my-5 ">
         <div className="flex items-center">
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
-          <span className="bg-[#3889db] w-fit text-white p-2 px-5 text-xl rounded-md">
+          <span className="bg-blueTick w-fit text-white p-2 px-5 text-xl rounded-md">
             Projects
           </span>
           <span className="w-24 h-[2px] bg-[#3fc6ff]"></span>
         </div>
       </div>
       {contents.map((pr, index) => (
-        projectComponent(index,pr)
-    
-  
+        projectComponent(index, pr)
+
+
       ))}
 
       {/* Second project */}

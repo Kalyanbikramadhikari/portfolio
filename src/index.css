@@ -16,7 +16,7 @@
   overflow: hidden;
   border-right: .15em solid white; /* Change the border color to match the text color */
   white-space: nowrap;
-  animation: typing 5s steps(40, end);
+  animation: typing 25s steps(40, end);
 }
 html, body {
   height: 100%;

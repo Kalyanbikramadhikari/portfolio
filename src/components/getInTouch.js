@@ -2,7 +2,7 @@ import React from 'react'
 
 const GetInTouch = () => {
     return (
-        <>
+        <div id='get-in-touch'>
         <div className='border-t my-5 lg:my-10 border-[#25213b]'>
             <div className="flex justify-center -translate-y-[1px]">
                 <div className="w-full">
@@ -22,7 +22,7 @@ const GetInTouch = () => {
         </div>
 
 
-        <div className='flex flex-col justify-center'>
+        <div className='flex flex-col justify-center items-center'>
             <div className='font-medium text-xl'>Please feel free to contact me if you need any sort of website.</div>
             <div className='font-medium text-xl'>I will try to help you as soon as I can. 🤗</div>
             <div className='flex justify-center gap-x-8 mt-14'>
@@ -33,7 +33,7 @@ const GetInTouch = () => {
 
             </div>
         </div>
-        </>
+        </div>
     )
 }
 
