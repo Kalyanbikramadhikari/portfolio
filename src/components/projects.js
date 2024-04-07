@@ -99,13 +99,13 @@ const Project = () => {
 
     return (
       // data-aos={index%2===0?"fade-right":"fade-left"}
-      <div key={index} className="flex items-center w-full gap-x-12 p-16">
+      <div key={index} className="py-4 px-4 flex  flex-col lg:flex-row md:p-16 items-center w-full gap-x-12 lg:p-16">
 
         {/* Left component */}
         <div
 
 
-          className={`flex-initial w-1/2  rounded-lg   flex justify-center project-section ${isEven ? "" : "order-1"
+          className={`flex-initial w-full lg:w-1/2 lg:rounded-lg   flex justify-center project-section lg:${isEven ? "" : "order-1"
             }`}
           id={`project-section-${index}`}
         >
@@ -130,7 +130,7 @@ const Project = () => {
         <div
 
 
-          className={`w-1/2 items-start shadow-2xl p-5   text-start rounded-lg ${isEven ? "order-1" : ""
+          className={`w-full lg:w-1/2 items-start shadow-2xl p-5   text-start rounded-lg lg:${isEven ? "order-1" : ""
             }`}
         >
 
@@ -166,7 +166,7 @@ const Project = () => {
 
   return (
     <section className="">
-      <div id="project" className="flex pt-16 justify-center my-5 ">
+      <div id="project" className="flex lg:pt-16 justify-center my-5 ">
         <div className="flex items-center">
           <span className="w-24 h-[2px] bg-[#1a1443]"></span>
           <span className="bg-blueTick w-fit text-white p-2 px-5 text-xl rounded-md">
