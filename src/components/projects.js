@@ -33,7 +33,7 @@ const Project = () => {
     {
       pname: "NIC HUB",
       description:
-        "NIC Hub is project of NICs. NICs are the groups of stakeholders from diverse backgrounds solving problems together using the tools of improvement science, specifically Plan-Do-Study-Act cycles. As the developer affiliated with the Digital Learning Research Lab at Kathmandu University, I took on the responsibility of crafting and refining the NIC Hub website.  ",
+        "NIC Hub website is project of NICs assigned to me by Assistant Professor Dr.Sushil Shrestha sir. NICs are the groups of stakeholders from diverse backgrounds solving problems together using the tools of improvement science, specifically Plan-Do-Study-Act cycles. As the developer affiliated with the Digital Learning Research Lab at Kathmandu University, I took on the responsibility of crafting and refining the NIC Hub website.  ",
       imagesrc: '/assets/images/nichub.png',
       ticket1: '/assets/images/wordpress-ticket.png'
     },
@@ -66,6 +66,22 @@ const Project = () => {
       ticket1: '/assets/images/react-ticket.png',
       ticket2: '/assets/images/nodejs-ticket.png',
       ticket3: '/assets/images/stripejs-ticket.png'
+    },
+    {
+      pname: "Instagram Clone",
+      description:
+        "The Instagram clone project replicates the renowned social media platform, Instagram. This endeavor aims to recreate the familiar UI of Instragram while providing a platform for learning and experimentation.Built using cutting-edge technologies, the frontend of the Instagram clone is crafted with React.js and Tailwind CSS. One of the key features of the Facebook clone is its responsiveness across various devices and screen sizes. Whether accessed from a desktop, laptop, tablet, or smartphone, users can seamlessly navigate and engage with the platform, ensuring an optimal experience regardless of the device being used.",
+      imagesrc: '/assets/images/insta-clone.png',
+      ticket1: '/assets/images/react-ticket.png',
+      ticket2: '/assets/images/tailwind-ticket.png',
+      // ticket3:'/assets/images/stripejs-ticket.png'
+    },
+    {
+      pname: "DLR Lab",
+      description:
+        "DLR Lab website is project of assigned to me by Assistant Professor Dr.Sushil Shrestha sir. ",
+      imagesrc: '/assets/images/dlrlab.png',
+      ticket1: '/assets/images/wordpress-ticket.png'
     },
     {
       pname: "Game Dashboard",

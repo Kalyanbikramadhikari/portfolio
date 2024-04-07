@@ -27,8 +27,8 @@ const GetInTouch = () => {
             <div className='font-medium text-xl'>I will try to help you as soon as I can. 🤗</div>
             <div className='flex justify-center gap-x-8 mt-14'>
                 <a href="https://github.com/Kalyanbikramadhikari" ><img className='h-12' src="assets/images/git-hub-logo.png" alt="" /></a>
-                <a href="https://www.instagram.com/kalyan08bikram/" ><img className='h-12' src="assets/images/linkedin-logo.png" alt="" /></a>
-                <a href="https://www.linkedin.com/in/kalyan-bikram-adhikari-495907266/" ><img className='h-12' src="assets/images/insta-logo.png" alt="" /></a>
+                <a href="https://www.linkedin.com/in/kalyan-bikram-adhikari-495907266/" ><img className='h-12' src="assets/images/linkedin-logo.png" alt="" /></a>
+                <a href="https://www.instagram.com/kalyan08bikram/" ><img className='h-12' src="assets/images/insta-logo.png" alt="" /></a>
                 <a href=" https://www.upwork.com/freelancers/~01fb47069aaec8d646" ><img className='h-12' src="assets/images/upwork.svg" alt="" /></a>
 
             </div>
