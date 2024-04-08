@@ -52,7 +52,7 @@ const Project = () => {
     {
       pname: "Facebook Clone",
       description:
-        "The Facebook clone project replicates the renowned social media platform, Facebook. This endeavor aims to recreate the familiar UI of Facebook while providing a platform for learning and experimentation.Built using cutting-edge technologies, the frontend of the Facebook clone is crafted with React.js and Tailwind CSS. One of the key features of the Facebook clone is its responsiveness across various devices and screen sizes. Whether accessed from a desktop, laptop, tablet, or smartphone, users can seamlessly navigate and engage with the platform, ensuring an optimal experience regardless of the device being used.",
+        "The Facebook clone project replicates the renowned social media platform, Facebook. This endeavor aims to recreate the familiar UI of Facebook while providing a platform for learning and experimentation.The frontend of the Facebook clone is crafted with React.js and Tailwind CSS. One of the key features of the Facebook clone is its responsiveness across various devices and screen sizes. Whether accessed from a desktop, laptop, tablet, or smartphone, users can seamlessly navigate and engage with the platform, ensuring an optimal experience regardless of the device being used.",
       imagesrc: '/assets/images/fb-clone.png',
       ticket1: '/assets/images/react-ticket.png',
       ticket2: '/assets/images/tailwind-ticket.png',
@@ -70,7 +70,7 @@ const Project = () => {
     {
       pname: "Instagram Clone",
       description:
-        "The Instagram clone project replicates the renowned social media platform, Instagram. This endeavor aims to recreate the familiar UI of Instragram while providing a platform for learning and experimentation.Built using cutting-edge technologies, the frontend of the Instagram clone is crafted with React.js and Tailwind CSS. One of the key features of the Facebook clone is its responsiveness across various devices and screen sizes. Whether accessed from a desktop, laptop, tablet, or smartphone, users can seamlessly navigate and engage with the platform, ensuring an optimal experience regardless of the device being used.",
+        "The Instagram clone project replicates the renowned social media platform, Instagram. This endeavor aims to recreate the familiar UI of Instragram while providing a platform for learning and experimentation. The frontend of the Instagram clone is crafted with React.js and Tailwind CSS. One of the key features of the Facebook clone is its responsiveness across various devices and screen sizes. Whether accessed from a desktop, laptop, tablet, or smartphone, users can seamlessly navigate and engage with the platform, ensuring an optimal experience regardless of the device being used.",
       imagesrc: '/assets/images/insta-clone.png',
       ticket1: '/assets/images/react-ticket.png',
       ticket2: '/assets/images/tailwind-ticket.png',
@@ -90,6 +90,15 @@ const Project = () => {
       imagesrc: '/assets/images/game.png',
       ticket1: '/assets/images/react-ticket.png',
       ticket2: '/assets/images/mui-ticket.png',
+      // ticket3:'/assets/images/stripejs-ticket.png'
+    },
+    {
+      pname: "Allan Solly UI",
+      description:
+        "As per the requirement of my Upwork client this was developed with the use of pure HTML and CSS. He wanted no framework or library to be used and the work to be done in plain HTML and CSS and I had it done as per his requirement.",
+      imagesrc: '/assets/images/allansolly.png',
+      ticket1: '/assets/images/html-ticket.png',
+      ticket2: '/assets/images/css-ticket.png',
       // ticket3:'/assets/images/stripejs-ticket.png'
     },
   ];
@@ -113,7 +122,7 @@ const Project = () => {
             isVisible[`project-section-${index}`] && (
               <div
                 data-aos-delay={index * 100}
-                data-aos={isEven ? "fade-right" : "fade-left"}
+                data-aos={isEven ? "fade-right" : "fade-right"}
               >
                 {<img
                   src={pr.imagesrc}
@@ -137,11 +146,11 @@ const Project = () => {
           {isVisible[`project-section-${index}`] && (
             <div
               data-aos-delay={index * 100}
-              data-aos={isEven ? "fade-left" : "fade-right"}
+              data-aos={isEven ? "fade-left" : "fade-left"}
             >
               <h2 className="text-[1.4rem] font-semibold text-titleBlue">{pr.pname}</h2>
               <h3 className="text-[1rem] font-normal text-sm">{pr.description}</h3>
-              <div className=" mt-5 flex gap-x-4">
+              <div className=" mt-5 flex gap-x-4 flex-wrap">
                 <img className="h-10 " src={pr.ticket1} alt="" />
                 {
                   pr.ticket2 && 
