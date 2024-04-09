@@ -7,6 +7,7 @@ import React, { useEffect, useState } from "react";
 // import facebookClone from '../../public/assets/images/fb-clone.png'
 
 // import Button from "./button";
+// import { Link } from "react-router-dom";
 
 const Project = () => {
   const [isVisible, setIsVisible] = useState({});
@@ -33,9 +34,10 @@ const Project = () => {
     {
       pname: "NIC HUB",
       description:
-        "NIC Hub website is project of NICs assigned to me by Assistant Professor Dr.Sushil Shrestha sir. NICs are the groups of stakeholders from diverse backgrounds solving problems together using the tools of improvement science, specifically Plan-Do-Study-Act cycles. As the developer affiliated with the Digital Learning Research Lab at Kathmandu University, I took on the responsibility of crafting and refining the NIC Hub website.  ",
+        "I was entrusted with developing the website for the NIC Hub, a project by Assistant Professor Dr. Sushil Shrestha focused on collaborative problem-solving. NICs (Network Improvement Communities) bring together stakeholders from diverse backgrounds to tackle challenges using Plan-Do-Study-Act cycles. In my role as a developer affiliated with the Digital Learning Research Lab at Kathmandu University, I played a key role in crafting and refining the NIC Hub website.  ",
       imagesrc: '/assets/images/nichub.png',
-      ticket1: '/assets/images/wordpress-ticket.png'
+      ticket1: '/assets/images/wordpress-ticket.png',
+      link1: 'https://nichub.ku.edu.np'
     },
     {
       pname: "Explore Live",
@@ -44,7 +46,8 @@ const Project = () => {
       imagesrc: '/assets/images/explorelive.png',
       ticket1: '/assets/images/react-ticket.png',
       ticket2: '/assets/images/nodejs-ticket.png',
-      ticket3: '/assets/images/stripejs-ticket.png'
+      ticket3: '/assets/images/stripejs-ticket.png',
+      link1: 'https://github.com/Kalyanbikramadhikari/exploreLive'
 
 
 
@@ -52,11 +55,21 @@ const Project = () => {
     {
       pname: "Facebook Clone",
       description:
-        "The Facebook clone project replicates the renowned social media platform, Facebook. This endeavor aims to recreate the familiar UI of Facebook while providing a platform for learning and experimentation.The frontend of the Facebook clone is crafted with React.js and Tailwind CSS. One of the key features of the Facebook clone is its responsiveness across various devices and screen sizes. Whether accessed from a desktop, laptop, tablet, or smartphone, users can seamlessly navigate and engage with the platform, ensuring an optimal experience regardless of the device being used.",
+        "The Facebook clone project replicates the renowned social media platform, Facebook. The frontend of the Facebook clone is crafted with React.js and Tailwind CSS. One of the key features of the Facebook clone is its responsiveness across various devices and screen sizes. Whether accessed from a desktop, laptop, tablet, or smartphone, users can seamlessly navigate and engage with the platform, ensuring an optimal experience regardless of the device being used.",
       imagesrc: '/assets/images/fb-clone.png',
       ticket1: '/assets/images/react-ticket.png',
       ticket2: '/assets/images/tailwind-ticket.png',
       // ticket3:'/assets/images/stripejs-ticket.png'
+      link1: 'https://github.com/Kalyanbikramadhikari/facebookclone'
+    },
+    {
+      pname: "DLR Lab",
+      description:
+        "I had the pleasure of developing the website for the DLR (Digital Learning Research) Lab at Kathmandu University Central Campus. The Lab is led by Assistant Professor Dr. Sushil Shrestha. I worked closely with Dr. Shrestha to understand his requirements and translate them into a user-friendly and informative website.",
+      imagesrc: '/assets/images/dlrlab.png',
+      ticket1: '/assets/images/wordpress-ticket.png',
+
+      link1: 'https://dlrlab.ku.edu.np/'
     },
     {
       pname: "Shopit",
@@ -65,24 +78,20 @@ const Project = () => {
       imagesrc: '/assets/images/shopit.jpg',
       ticket1: '/assets/images/react-ticket.png',
       ticket2: '/assets/images/nodejs-ticket.png',
-      ticket3: '/assets/images/stripejs-ticket.png'
+      ticket3: '/assets/images/stripejs-ticket.png',
+      link1: 'https://github.com/Kalyanbikramadhikari/e-commerce'
     },
     {
       pname: "Instagram Clone",
       description:
-        "The Instagram clone project replicates the renowned social media platform, Instagram. This endeavor aims to recreate the familiar UI of Instragram while providing a platform for learning and experimentation. The frontend of the Instagram clone is crafted with React.js and Tailwind CSS. One of the key features of the Facebook clone is its responsiveness across various devices and screen sizes. Whether accessed from a desktop, laptop, tablet, or smartphone, users can seamlessly navigate and engage with the platform, ensuring an optimal experience regardless of the device being used.",
+        "The Instagram clone project replicates the renowned social media platform, Instagram. The frontend of the Instagram clone is crafted with React.js and Tailwind CSS. One of the key features of the Facebook clone is its responsiveness across various devices and screen sizes. Whether accessed from a desktop, laptop, tablet, or smartphone, users can seamlessly navigate and engage with the platform, ensuring an optimal experience regardless of the device being used.",
       imagesrc: '/assets/images/insta-clone.png',
       ticket1: '/assets/images/react-ticket.png',
       ticket2: '/assets/images/tailwind-ticket.png',
-      // ticket3:'/assets/images/stripejs-ticket.png'
+      // ticket3:'/assets/images/stripejs-ticket.png',
+      link1: 'https://github.com/Kalyanbikramadhikari/Instagram-clone'
     },
-    {
-      pname: "DLR Lab",
-      description:
-        "DLR Lab website is project of assigned to me by Assistant Professor Dr.Sushil Shrestha sir. ",
-      imagesrc: '/assets/images/dlrlab.png',
-      ticket1: '/assets/images/wordpress-ticket.png'
-    },
+    
     {
       pname: "Game Dashboard",
       description:
@@ -90,7 +99,10 @@ const Project = () => {
       imagesrc: '/assets/images/game.png',
       ticket1: '/assets/images/react-ticket.png',
       ticket2: '/assets/images/mui-ticket.png',
+
       // ticket3:'/assets/images/stripejs-ticket.png'
+
+      link1: 'https://github.com/Techore/royal-roulette-frontend'
     },
     {
       pname: "Allan Solly UI",
@@ -108,7 +120,7 @@ const Project = () => {
 
     return (
       // data-aos={index%2===0?"fade-right":"fade-left"}
-      <div key={index} className="py-4 px-4 flex  flex-col lg:flex-row md:p-16 items-center w-full gap-x-12 lg:p-16">
+      <div key={index} className="py-2 px-4 flex  flex-col lg:flex-row md:px-16 md:py-10 items-center w-full gap-x-12 ">
 
         {/* Left component */}
         <div
@@ -148,22 +160,38 @@ const Project = () => {
               data-aos-delay={index * 100}
               data-aos={isEven ? "fade-left" : "fade-left"}
             >
-              <h2 className="text-[1.4rem] font-semibold text-titleBlue">{pr.pname}</h2>
+              <h2 className="text-[1.4rem] font-semibold text-titleBlue text-justify">{pr.pname}</h2>
               <h3 className="text-[1rem] font-normal text-sm">{pr.description}</h3>
-              <div className=" mt-5 flex gap-x-4 flex-wrap">
+              <div className=" mt-2 mb-2 flex gap-x-4 flex-wrap">
                 <img className="h-10 " src={pr.ticket1} alt="" />
                 {
-                  pr.ticket2 && 
-                <img className="h-10 " src={pr.ticket2} alt="" />
-                
+                  pr.ticket2 &&
+                  <img className="h-10 " src={pr.ticket2} alt="" />
+
                 }
 
-{
-                  pr.ticket3 && 
-                <img className="h-10 " src={pr.ticket3} alt="" />
-                
+                {
+                  pr.ticket3 &&
+                  <img className="h-10 " src={pr.ticket3} alt="" />
+
                 }
               </div>
+
+              {
+                pr.link1 &&
+                <div>
+                  <a
+                    href={pr.link1}
+                    target="_blank" // Opens the link in a new tab
+                    rel="noopener noreferrer" // Recommended for security
+                  >
+                    <button className="bg-white border-2 border-blueTick text-blueTick hover:bg-blueTick hover:border-2 hover:border-white hover:text-white font-bold rounded-xl h-10 px-5">
+                      View Project <i className="fa-solid fa-arrow-up-right-from-square ml-2"></i>
+                    </button>
+                  </a>
+                </div>
+              }
+
             </div>
 
           )}
