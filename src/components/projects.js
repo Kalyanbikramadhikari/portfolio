@@ -47,6 +47,8 @@ const Project = () => {
       ticket1: '/assets/images/react-ticket.png',
       ticket2: '/assets/images/nodejs-ticket.png',
       ticket3: '/assets/images/stripejs-ticket.png',
+      ticket4: '/assets/images/redux-ticket.svg',
+
       link1: 'https://github.com/Kalyanbikramadhikari/exploreLive'
 
 
@@ -79,6 +81,8 @@ const Project = () => {
       ticket1: '/assets/images/react-ticket.png',
       ticket2: '/assets/images/nodejs-ticket.png',
       ticket3: '/assets/images/stripejs-ticket.png',
+      ticket4: '/assets/images/redux-ticket.svg',
+
       link1: 'https://github.com/Kalyanbikramadhikari/e-commerce'
     },
     {
@@ -165,6 +169,11 @@ const Project = () => {
               <div className=" mt-2 mb-2 flex gap-x-4 flex-wrap">
                 <img className="h-10 " src={pr.ticket1} alt="" />
                 {
+                  pr.ticket4 &&
+                  <img className="h-10 " src={pr.ticket4} alt="" />
+
+                }
+                {
                   pr.ticket2 &&
                   <img className="h-10 " src={pr.ticket2} alt="" />
 
@@ -175,6 +184,7 @@ const Project = () => {
                   <img className="h-10 " src={pr.ticket3} alt="" />
 
                 }
+                
               </div>
 
               {
