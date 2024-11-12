@@ -1,0 +1,76 @@
+import React from "react";
+
+const WorkExperience = () => {
+    const experiences = [
+        {
+            id: 1,
+            company: "TechGlazers Pvt. Ltd.",
+            role: "Frontend Developer",
+            date: "Jun 2024 - PRESENT",
+            description:
+                "Working with a cross-functional team in a fast-paced environment to build, maintain and test a user-centric fintech solution using modern technologies.",
+            logo: "/assets/images/techglazers.png",
+        },
+        {
+            id: 2,
+            company: "Techore Solution",
+            role: "Frontend Developer",
+            date: "Nov 2022 - Jan 2024",
+            description:
+                "Technical content author tasked with creating interactive real-world tutorials, focused on topics like Next.js, TypeScript, React.",
+            logo: "/assets/images/techoresolution.png",
+        },
+        {
+            id: 3,
+            company: "Digital Learning Research Lab",
+            role: "Web Developer",
+            date: "Feb 2024 - April 2024",
+            description:
+                "Volunteer writer for freeCodeCamp, producing technical articles around topics like Next.js, React, and JavaScript.",
+            logo: "/assets/images/ku.png",
+        },
+
+    ];
+
+    return (
+        <div className=" mx-16 ">
+            <h2 className="text-2xl font-bold mb-6">Work Experience</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {experiences.map((exp) => (
+                    <div
+                        key={exp.id}
+                        // className="flex items-start space-x-4 bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-lg transition-shadow"
+                        className="flex items-start space-x-4 p-4 "
+
+                    >
+                        {/* <div className=" p-1 rounded-sm border-[1px] border-[#a3a3a3] "> */}
+                        <img
+                            src={exp.logo}
+                            alt={`${exp.company} logo`}
+                            className=" h-12"
+                        />
+                        {/* </div> */}
+
+                        <div>
+                            <h3 className="text-lg font-semibold">{exp.company}</h3>
+                            <p className="text-sm text-gray-500">{exp.role}</p>
+                            <p className="text-sm text-gray-400">
+                                {exp.date.includes("PRESENT") ? (
+                                    <>
+                                        {exp.date.split("PRESENT")[0]}
+                                        <span className="text-green-500 font-semibold">PRESENT</span>
+                                    </>
+                                ) : (
+                                    exp.date
+                                )}
+                            </p>
+                            <p className="text-sm text-gray-700 mt-2">{exp.description}</p>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+};
+
+export default WorkExperience;

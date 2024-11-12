@@ -8,6 +8,7 @@ import GetInTouch from './components/getInTouch';
 import Footer from './components/footer';
 import OpenSourceContributions from './components/OpenSourceContributions';
 import Aboutme from './components/Aboutme';
+import WorkExperience from './components/Experience';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -35,6 +36,7 @@ function App() {
           <Navbar/>
           <Aboutme/>
           <OpenSourceContributions/>
+          <WorkExperience/>
           <Projects />
           <Skills/> 
           <GetInTouch/>
