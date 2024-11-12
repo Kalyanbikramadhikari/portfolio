@@ -3,27 +3,28 @@ import Button from "./button";
 import { Link } from "react-scroll";
 
 const Home = () => {
-    const handleDownload = () => {
-        const link = document.createElement('a');
-        link.href = '/assets/resume/Kalyan_Bikram_Adhikari_Resume.pdf'; 
-        link.download = 'Kalyan_Bikram_Adhikari_Resume.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      };
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/assets/resume/Kalyan_Bikram_Adhikari_Resume.pdf';
+    link.download = 'Kalyan_Bikram_Adhikari_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <div className="flex flex-col md:flex-row justify-left items-center md:h-screen w-full bg-gradient-to-br p-8 md:p-16 from-[#88a5d940] to-[#387CE5]">
-      <div className="md:w-1/2 h-full flex flex-col justify-start  items-start text-white">
+      {/* left section */}
+      <div className="md:w-1/2 h-full flex flex-col justify-center  items-start text-white">
         <div data-aos="fade-right" className="mb-8 w-full text-left md:text-left">
-          <span className="font-bold text-4xl">Hi. 
+          <span className="font-bold text-4xl">Hi.
             <div
               role="img"
               aria-label="Wave Emoji"
               className="mr-2 animate-bounce font-bold text-7xl inline-block"
             >
               👋
-            </div> 
+            </div>
           </span>
           <div className="text-titleBlue text-4xl font-bold">
             I'm Kalyan Bikram Adhikari
@@ -31,6 +32,20 @@ const Home = () => {
         </div>
         <div className="font-bold text-4xl text-left md:text-left ">
           I am a Frontend & Web Developer
+        </div>
+        <div className='flex justify-center gap-x-8 mt-14'>
+          <a href="https://github.com/Kalyanbikramadhikari">
+            <img className='h-12' src="assets/images/git-hub-logo.png" alt="GitHub" />
+          </a>
+          <a href="https://www.linkedin.com/in/kalyan-bikram-adhikari-495907266/">
+            <img className='h-12' src="assets/images/linkedin-logo.png" alt="LinkedIn" />
+          </a>
+          <a href="https://www.instagram.com/kalyan08bikram/">
+            <img className='h-12' src="assets/images/insta-logo.png" alt="Instagram" />
+          </a>
+          <a href="https://www.upwork.com/freelancers/~01fb47069aaec8d646">
+            <img className='h-12' src="assets/images/upwork.svg" alt="Upwork" />
+          </a>
         </div>
         <div className="mb-8 mt-10 flex justify-left md:justify-start">
           <button onClick={handleDownload} className="bg-white border-2 border-titleBlue text-blue-500 hover:bg-titleBlue hover:border-2 hover:border-white hover:text-white font-bold py-2 rounded-3xl h-14 px-4 pr-6">
