@@ -34,13 +34,21 @@ const WorkExperience = () => {
 
     return (
         <div className=" mx-16 ">
-            <h2 className="text-2xl font-bold mb-6">Work Experience</h2>
+            <div className="flex justify-center my-5 lg:py-4">
+                <div className="flex items-center">
+                    <span className="w-16 h-[2px] bg-[#1a1443]"></span>
+                    <span className="bg-blueTick w-fit text-white p-2 px-5 text-xl rounded-md shadow-md">
+                        Work Experience
+                    </span>
+                    <span className="w-16 h-[2px] bg-[#3fc6ff]"></span>
+                </div>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {experiences.map((exp) => (
                     <div
                         key={exp.id}
                         // className="flex items-start space-x-4 bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-lg transition-shadow"
-                        className="flex items-start space-x-4 p-4 "
+                        className="flex items-start space-x-4  p-4 mr-14 "
 
                     >
                         {/* <div className=" p-1 rounded-sm border-[1px] border-[#a3a3a3] "> */}

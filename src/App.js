@@ -33,18 +33,22 @@ function App() {
       ) : (
         <div >
           <Home />
-          <Navbar/>
-          <Aboutme/>
-          <OpenSourceContributions/>
-          <WorkExperience/>
-          <Projects />
-          <Skills/> 
-          <GetInTouch/>
-          <Footer/>
+          <Navbar />
+          <div className=" bg-gradient-to-r from-white to-[#f0f4ff]">
+            <Aboutme />
+            {/* <OpenSourceContributions /> */}
+            <Skills />
+
+            <WorkExperience />
+            <Projects />
+            <GetInTouch />
+            <Footer />
+          </div>
+
         </div>
       )
-}
-  </div>
+      }
+    </div>
   );
 }
 
