@@ -32,6 +32,55 @@ const Project = () => {
 
   const contents = [
     {
+      pname: "Beer Website",
+      description:
+        "This is my personal project working with animation built with react, tailwind and gsap.",
+      imagesrc: '/assets/images/nepalice.png',
+      ticket1: '/assets/images/react-ticket.png',
+      // ticket2: '/assets/images/nodejs-ticket.png',
+      // ticket3: '/assets/images/stripejs-ticket.png',
+      // ticket4: '/assets/images/redux-ticket.svg',
+      ticket2: '/assets/images/tailwind-ticket.png',
+
+
+      link1: 'https://github.com/Kalyanbikramadhikari/nepalice',
+      link2:''
+
+
+
+    },{
+      pname: "Auditica",
+      description:
+        "Auditica is a web application frontend design implementation trying to make an online music streaming application. ",
+      imagesrc: '/assets/images/auditica.png',
+      ticket1: '/assets/images/react-ticket.png',
+      ticket2: '/assets/images/tailwind-ticket.png',
+
+
+      link1: 'https://github.com/Kalyanbikramadhikari/auditica'
+    },{
+      pname: "Nike Website",
+      description:
+        "Nike Website is the frontend design implementation of the popular shoe brand Nike ",
+      imagesrc: '/assets/images/nike.png',
+      ticket1: '/assets/images/react-ticket.png',
+      ticket2: '/assets/images/tailwind-ticket.png',
+
+
+      link1: 'https://github.com/Kalyanbikramadhikari/sneakers'
+    },
+    // ,{
+    //   pname: "Auditica",
+    //   description:
+    //     "Auditica is a web application frontend design implementation trying to make an online music streaming application. ",
+    //   imagesrc: '/assets/images/auditica.png',
+    //   ticket1: '/assets/images/react-ticket.png',
+    //   ticket2: '/assets/images/tailwind-ticket.png',
+
+
+    //   link1: 'https://github.com/Kalyanbikramadhikari/auditica'
+    // },
+    {
       pname: "NIC HUB",
       description:
         "I was entrusted with developing the website for the NIC Hub, a project by Assistant Professor Dr. Sushil Shrestha focused on collaborative problem-solving. NICs (Network Improvement Communities) bring together stakeholders from diverse backgrounds to tackle challenges using Plan-Do-Study-Act cycles. In my role as a developer affiliated with the Digital Learning Research Lab at Kathmandu University, I played a key role in crafting and refining the NIC Hub website.  ",

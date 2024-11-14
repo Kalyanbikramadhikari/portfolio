@@ -48,21 +48,34 @@ const WorkExperience = () => {
                     <div
                         key={exp.id}
                         // className="flex items-start space-x-4 bg-gray-50 p-4 rounded-lg shadow-sm hover:shadow-lg transition-shadow"
-                        className="flex items-start space-x-4  p-4 mr-14 "
+                        className="flex items-start space-x-6 p-4 mr-14 "
 
                     >
+                        <div className="flex flex-col items-center">
+                            <div className="p-4 bg-[#f5f4f4] border border-[#c7c7c7] rounded-md   ">
+                                <img src={exp.logo} alt="" className={`:h-12 ${exp.logo.includes('techglazers') ? 'w-32' : exp.logo.includes('ku') ? 'xl:w-[80px]' : 'xl:w-[90px]'}`} />
+                            </div>
+                            <div
+                                className="h-[70px] border-l rounded-lg"
+                                style={{
+                                    borderImage: "linear-gradient(to bottom, #c7c7c7, #ebebeb) 1",
+                                }}
+                            ></div>
+                        </div>
+
+
                         {/* <div className=" p-1 rounded-sm border-[1px] border-[#a3a3a3] "> */}
-                        <img
+                        {/* <img
                             src={exp.logo}
                             alt={`${exp.company} logo`}
                             className=" h-12"
-                        />
+                        /> */}
                         {/* </div> */}
 
                         <div>
-                            <h3 className="text-lg font-semibold">{exp.company}</h3>
-                            <p className="text-sm text-gray-500">{exp.role}</p>
-                            <p className="text-sm text-gray-400">
+                            <h3 className="text-xl font-semibold">{exp.company}</h3>
+                            <p className="text-md font-medium mt-1 text-gray-700">{exp.role}</p>
+                            <p className="text-sm mt-2 text-gray-400">
                                 {exp.date.includes("PRESENT") ? (
                                     <>
                                         {exp.date.split("PRESENT")[0]}
@@ -72,7 +85,7 @@ const WorkExperience = () => {
                                     exp.date
                                 )}
                             </p>
-                            <p className="text-sm text-gray-700 mt-2">{exp.description}</p>
+                            <p className="text-[17px] text-gray-700 mt-2">{exp.description}</p>
                         </div>
                     </div>
                 ))}

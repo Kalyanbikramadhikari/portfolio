@@ -7,8 +7,10 @@ import Navbar from './components/navbar';
 import GetInTouch from './components/getInTouch';
 import Footer from './components/footer';
 import OpenSourceContributions from './components/OpenSourceContributions';
-import Aboutme from './components/Aboutme';
+// import Aboutme from './components/Aboutme';
 import WorkExperience from './components/Experience';
+import Contributions from './components/Contributions';
+import Aboutme from './components/Aboutme';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -35,8 +37,9 @@ function App() {
           <Home />
           <Navbar />
           <div className=" bg-gradient-to-r from-white to-[#f0f4ff]">
-            <Aboutme />
+            <Contributions />
             {/* <OpenSourceContributions /> */}
+            <Aboutme/>
             <Skills />
 
             <WorkExperience />
