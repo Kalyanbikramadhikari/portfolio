@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 
 const Aboutme = () => {
     const [activeSkill, setActiveSkill] = useState('Optimization');
-    const skills = ['Optimization', 'Design Implementation', 'Animation'];
-    const optimizationSkills = ['Code Splitting', 'Cache data storing', 'Pre-fetching & Re-fetching', 'Pessimistic & Optimistic updates', 'Polling', 'Web Worker'];
+    const skills = ['Optimization', 'Design Implementation & Logic handling', 'Animation'];
+    const optimizationSkills = ['Code Splitting', 'Cache management', 'Pre-fetching & Re-fetching', 'Pessimistic & Optimistic updates', 'Polling', 'Web Workers'];
+    const designImplementationSkills =['Clone figma designs into code','Logic Handling for APIs', 'Reusable Component Creation','Responsive Layouts']
+    const animationSkills =['Scroll Animations', 'Transition effects','Hover Animations']
 
     return (
         <div className="md:px-16 py-4">
@@ -42,11 +44,10 @@ const Aboutme = () => {
                         {skills.map((item, index) => (
                             <button
                                 key={index}
-                                className={`px-4 py-2 text-sm cursor-pointer transition-colors duration-200 ${
-                                    activeSkill === item
+                                className={`px-4 py-2 text-sm cursor-pointer transition-colors duration-200 ${activeSkill === item
                                         ? 'border-b-2 border-blueTick text-blueTick font-medium'
                                         : 'text-gray-600 hover:text-blueTick'
-                                }`}
+                                    }`}
                                 onClick={() => setActiveSkill(item)}
                                 aria-label={`Select ${item}`}
                             >
@@ -62,9 +63,42 @@ const Aboutme = () => {
                                 {optimizationSkills.map((item, index) => (
                                     <div
                                         key={index}
-                                        className="flex flex-col p-4 bg-white border border-[#a3a3a3] shadow-sm rounded-lg transform transition-all hover:scale-105 hover:shadow-lg"
+                                        className="flex flex-col p-4 bg-white border border-[#a3a3a3] shadow-sm rounded-lg transform transition-all  hover:shadow-lg"
                                     >
-                                        <span className="text-blueTick font-bold mb-2">{index + 1}</span>
+                                        <span className="text-blueTick font-bold mb-2">0{index + 1}</span>
+                                        <span className="text-sm font-medium">{item}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+                    </div>
+                    {/* Design Implementation */}
+                    <div className="mt-4">
+                        {activeSkill === 'Design Implementation & Logic handling' && (
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                                {designImplementationSkills.map((item, index) => (
+                                    <div
+                                        key={index}
+                                        className="flex flex-col p-4 bg-white border border-[#a3a3a3] shadow-sm rounded-lg transform transition-all  hover:shadow-lg"
+                                    >
+                                        <span className="text-blueTick font-bold mb-2">0{index + 1}</span>
+                                        <span className="text-sm font-medium">{item}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+                    </div>
+
+                    {/* Animations */}
+                    <div className="mt-4">
+                        {activeSkill === 'Animation' && (
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                                {animationSkills.map((item, index) => (
+                                    <div
+                                        key={index}
+                                        className="flex flex-col p-4 bg-white border border-[#a3a3a3] shadow-sm rounded-lg transform transition-all  hover:shadow-lg"
+                                    >
+                                        <span className="text-blueTick font-bold mb-2">0{index + 1}</span>
                                         <span className="text-sm font-medium">{item}</span>
                                     </div>
                                 ))}
