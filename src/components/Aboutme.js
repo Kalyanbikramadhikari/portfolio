@@ -4,11 +4,11 @@ const Aboutme = () => {
     const [activeSkill, setActiveSkill] = useState('Optimization');
     const skills = ['Optimization', 'Design Implementation & Logic handling', 'Animation'];
     const optimizationSkills = ['Code Splitting', 'Cache management', 'Pre-fetching & Re-fetching', 'Pessimistic & Optimistic updates', 'Polling', 'Web Workers'];
-    const designImplementationSkills =['Clone figma designs into code','Logic Handling for APIs', 'Reusable Component Creation','Responsive Layouts']
-    const animationSkills =['Scroll Animations', 'Transition effects','Hover Animations']
+    const designImplementationSkills = ['Clone figma designs into code', 'Logic Handling for APIs', 'Reusable Component Creation', 'Responsive Layouts']
+    const animationSkills = ['Scroll Animations', 'Transition effects', 'Hover Animations']
 
     return (
-        <div className="md:px-16 py-4">
+        <div className="px-4 md:px-16 py-4">
             {/* Header */}
             <div className="flex justify-center my-5 lg:py-2">
                 <div className="flex items-center">
@@ -21,13 +21,16 @@ const Aboutme = () => {
             </div>
 
             {/* Content Section */}
-            <div className="flex flex-col md:flex-row gap-12">
+            <div className="flex flex-col lg:flex-row md:gap-12">
+
                 {/* About Me Text */}
-                <div className="md:w-1/2 space-y-4">
-                    <p>
+                <div className="lg:w-1/2 gap-y-4">
+                    <h2 className="text-2xl font-semibold text-gray-800 mb-4 ">Kalyan Bikram Adhikari .</h2>
+
+                    <span className='w-full'>
                         I am a frontend developer with over 1.5 years of professional experience, specializing in building high-performance web applications. My focus is on delivering fast, responsive, and user-friendly experiences for your projects.
-                    </p>
-                    <p>
+                    </span>
+                    <p className='w-full'>
                         I hold a Bachelor's degree in Computer Science from Kathmandu University, with prior education at Nepal Police Secondary Boarding School. Every day, I wake up with the mindset to excel and write clean, efficient code.
                     </p>
                     <p>
@@ -36,17 +39,19 @@ const Aboutme = () => {
                 </div>
 
                 {/* What I Can Offer Section */}
-                <div className="flex flex-col w-full md:w-1/2">
-                    <span className="mb-2 text-lg font-semibold">What I can offer</span>
+                <div className="flex flex-col w-full lg:w-1/2">
+                    {/* <span className="mb-2 text-lg font-semibold">What I can offer</span> */}
+                    <h2 className="text-2xl font-semibold text-gray-800 mb-4 ">What I can offer</h2>
+
 
                     {/* Skill Tabs */}
                     <div className="flex gap-4 border-b-[1px] border-[#a3a3a3]">
                         {skills.map((item, index) => (
                             <button
                                 key={index}
-                                className={`px-4 py-2 text-sm cursor-pointer transition-colors duration-200 ${activeSkill === item
-                                        ? 'border-b-2 border-blueTick text-blueTick font-medium'
-                                        : 'text-gray-600 hover:text-blueTick'
+                                className={`px-4 pb-2 text-sm cursor-pointer transition-colors duration-200 ${activeSkill === item
+                                    ? 'border-b-2 border-blueTick text-blueTick font-medium'
+                                    : 'text-gray-600 hover:text-blueTick'
                                     }`}
                                 onClick={() => setActiveSkill(item)}
                                 aria-label={`Select ${item}`}

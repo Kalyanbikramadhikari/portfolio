@@ -10,6 +10,9 @@ module.exports = {
         titleBlue: 'rgb(56, 137, 219)', // Corrected from titleeBlue to titleBlue
         blueTick:'rgb(30, 161, 243)'
       },
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'], // Setting Poppins as the default sans-serif
+      },
     },        
   },
   plugins: [],

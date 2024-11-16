@@ -6,7 +6,7 @@ const Contributions = () => {
     const [activeYear, setActiveYear] = useState('2024');
 
     return (
-        <div className="md:px-16 py-6">
+        <div className="px-4 md:px-16 py-6">
             {/* Title Section */}
             <div className="flex justify-center my-5 lg:py-4">
                 <div className="flex items-center">
