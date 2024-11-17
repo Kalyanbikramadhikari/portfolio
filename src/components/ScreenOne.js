@@ -2,7 +2,7 @@ import React from "react";
 import Button from "./button";
 import { Link } from "react-scroll";
 
-const Home = () => {
+const ScreenOne = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = '/assets/resume/Kalyan_Bikram_Adhikari_Resume.pdf';
@@ -84,4 +84,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default ScreenOne;
