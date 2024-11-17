@@ -5,6 +5,8 @@ import React from 'react';
 
 import { Page, Text, View, Document, StyleSheet, PDFViewer, Image } from '@react-pdf/renderer';
 import WorkExperience from './WorkExperience';
+import Education from './Education';
+import Project1 from './Projects';
 
 // Create styles
 const styles = StyleSheet.create({
@@ -143,6 +145,10 @@ const ResumeDocument = () => (
 
                     {/* work experience */}
                     <WorkExperience/>
+
+                    {/* Education */}
+                    <Education/>
+                    <Project1/>
                 </View>
             </Page>
         </Document>
