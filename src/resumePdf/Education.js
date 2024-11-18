@@ -4,8 +4,17 @@ import { Page, Text, View, Document, StyleSheet, PDFViewer } from '@react-pdf/re
 // Create styles
 const styles = StyleSheet.create({
     horizontalLine: {
-        marginTop: '3px',
-        borderBottom: '1px solid black'
+        marginTop: '2px',
+        borderBottom: '1px solid black',
+        marginBottom: '2px'
+    },
+    headings: {
+        // fontSize:'12px',
+        fontFamily: 'TimesNewRoman',
+        fontWeight: 'bold',
+        fontSize: '16px',
+        marginTop: '5px'
+
     },
     institutionContainer: {
         display: 'flex',
@@ -13,27 +22,49 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         fontSize: '10px'
     },
+    degreeName: {
+        fontFamily: 'TimesNewRoman',
+        fontWeight: 'bold',
+        fontSize: '12px',
+        marginBottom: 1,
+
+    },
+    dates: {
+        fontFamily: 'TimesNewRoman',
+        fontWeight: 'bold',
+        fontSize: '10px',
+        marginBottom: 1,
+
+    },
+    institutionName: {
+        fontSize: '10px',
+        fontFamily: 'TimesNewRoman',
+        fontWeight: 'bold',
+        marginBottom: '1px'
+    },
     description: {
-        fontSize: 9,
-        color: '#333',
-        marginTop: 2,
+        fontSize: '9px',
+        fontFamily: 'TimesNewRoman',
+        fontWeight:'normal',
+        // color: '#333',
+        marginTop:'5px',
     }
 });
 
 const Education = () => (
     <View>
-        <Text>Education & Qualification</Text>
+        <Text style={styles.headings}>Education & Qualification</Text>
         <View style={styles.horizontalLine}></View>
         <View>
             <View>
 
                 <View style={styles.institutionContainer}>
 
-                    <Text>Bachelors in Computer Science</Text>
-                    <Text>Sept 2019 - July 2024</Text>
+                    <Text style={styles.degreeName}>Bachelors in Computer Science</Text>
+                    <Text style={styles.dates}>Sept 2019 - July 2024</Text>
                 </View>
                 <View>
-                    <Text>Kathmandu University, Dhulikhel</Text>
+                    <Text style={styles.institutionName}>Kathmandu University, Dhulikhel</Text>
                     <Text style={styles.description}>
                         Relevant Courses: Data Structures, Algorithms, Web Development, Database Systems, Machine Learning.
                         Graduated with a focus on full-stack development and software engineering principles.
@@ -44,27 +75,27 @@ const Education = () => (
             </View>
 
 
-            <View>
+            <View style={{ marginTop: '5px' }}>
 
                 <View style={styles.institutionContainer}>
 
-                    <Text>10 +2 </Text>
-                    <Text>July 2017 - Apr 2019</Text>
+                    <Text style={styles.degreeName}>10 +2 </Text>
+                    <Text style={styles.dates}>July 2017 - Apr 2019</Text>
                 </View>
                 <View>
-                    <Text>Nepal Police School, Sanga, Kavre</Text>
+                    <Text style={styles.institutionName}>Nepal Police School, Sanga, Kavre</Text>
                 </View>
 
             </View>
-            <View>
+            <View style={{ marginTop: '5px' }}>
 
                 <View style={styles.institutionContainer}>
 
-                    <Text>SEE </Text>
-                    <Text>Apr 2012 - Apr 2017</Text>
+                    <Text style={styles.degreeName}>SEE </Text>
+                    <Text style={styles.dates}>Apr 2012 - Apr 2017</Text>
                 </View>
                 <View>
-                    <Text>Nepal Police School, Sanga, Kavre</Text>
+                    <Text style={styles.institutionName}>Nepal Police School, Sanga, Kavre</Text>
                 </View>
 
             </View>

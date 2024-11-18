@@ -3,10 +3,21 @@ import React from 'react';
 // import LinkedInIcon from '@mui/icons-material/LinkedIn';
 // import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
-import { Page, Text, View, Document, StyleSheet, PDFViewer, Image } from '@react-pdf/renderer';
+import { Page, Text, View, Document, StyleSheet, PDFViewer, Image, Font } from '@react-pdf/renderer';
 import WorkExperience from './WorkExperience';
 import Education from './Education';
 import Project1 from './Projects';
+
+Font.register({
+    family: 'TimesNewRoman',
+    src: '/assets/fonts/timesNewRoman.ttf', // Path to your .ttf file in the public folder
+    fontWeight: 'normal',
+});
+Font.register({
+    family: 'TimesNewRoman',
+    src: '/assets/fonts/timesNewRomanBold.ttf', // Path to your .ttf file in the public folder
+    fontWeight: 'bold',
+});
 
 // Create styles
 const styles = StyleSheet.create({
@@ -30,15 +41,23 @@ const styles = StyleSheet.create({
     },
     name: {
         display: 'flex',
-        textAlign: 'center'
+        textAlign: 'center',
+        fontFamily: 'TimesNewRoman',
+        fontWeight: 'normal',
+        fontSize: '26px',
+        marginBottom: '5px'
     },
     links: {
         display: 'flex',
         flexDirection: 'row',
-        fontSize: '8px',
+        fontSize: '9px',
         // border: '2px solid #000000',
         justifyContent: 'center',
-        columnGap: '5px'
+        columnGap: '5px',
+        fontFamily: 'TimesNewRoman',
+        fontWeight: 'normal',
+        fontFamily: 'TimesNewRoman',
+        // fontWeight: 'normal'
 
     },
     socialmedia: {
@@ -46,30 +65,47 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         fontSize: '7px',
         alignItems: 'center',
-        columnGap: '3px'
+        columnGap: '3px',
+        fontFamily: 'TimesNewRoman',
+        fontWeight: 'normal'
 
 
     },
     horizontalLine: {
-        marginTop: '3px',
-        borderBottom: '1px solid black'
+        marginTop: '2px',
+        borderBottom: '1px solid black',
+        marginBottom: '2px'
     },
-    headings:{
-        // fontSize:'12px'
+    headings: {
+        // fontSize:'12px',
+        fontFamily: 'TimesNewRoman',
+        fontWeight: 'bold',
+        fontSize: '16px'
 
     },
     skillsList: {
-        fontSize: '8px'
+        fontSize: '8px',
+        fontFamily: 'TimesNewRoman',
+        fontWeight: 'normal',
+        gap: '1px'
     },
-    skillItem:{
-        flexDirection:'row',
-        gap:'5px'
-    }, 
-    skillTitle:{
-        fontWeight:'bold'
+    skillName: {
+        fontFamily: 'TimesNewRoman',
+        fontWeight: 'normal',
+    },
+    skillItem: {
+        flexDirection: 'row',
+        gap: '5px',
+        fontFamily: 'TimesNewRoman',
+        fontWeight: 'normal'
+    },
+    skillTitle: {
+        fontFamily: 'TimesNewRoman',
+        fontWeight: 'bold'
     }
 
 });
+
 
 // Create Document Component
 const ResumeDocument = () => (
@@ -82,6 +118,11 @@ const ResumeDocument = () => (
                         <Text style={styles.name}>Kalyan Bikram Adhikari</Text>
                         <View style={styles.links}>
                             <View style={styles.socialmedia}>
+                                <Image src="/assets/images/portfolio.png" style={{ height: '10px', width: '10px' }}></Image>
+                                <Text>https://kalyanbikramadhikari.netlify.app/</Text>
+
+                            </View>
+                            <View style={styles.socialmedia}>
                                 <Image src="/assets/images/linkedIn.png" style={{ height: '10px', width: '10px' }}></Image>
                                 <Text> https://github.com/Kalyanbikramadhikari/</Text>
 
@@ -91,11 +132,7 @@ const ResumeDocument = () => (
                                 <Text>https://www.linkedin.com/in/kalyan-bikram-adhikari-495907266/</Text>
 
                             </View>
-                            <View style={styles.socialmedia}>
-                                <Image src="/assets/images/portfolio.png" style={{ height: '10px', width: '10px' }}></Image>
-                                <Text>https://kalyanbikramadhikari.netlify.app/</Text>
 
-                            </View>
 
 
 
@@ -112,43 +149,44 @@ const ResumeDocument = () => (
                     </View>
                     {/* Skills Section */}
                     <View>
-                        <Text styles={styles.headings}>Skills</Text>
+                        {/* <Text styles={{fontFamily:'TimesNewRoman', fontWeight:'bold', fontSize:'5px'}}>Skills</Text> */}
+                        <Text style={styles.headings}>Skills</Text>
                         <View style={styles.horizontalLine}></View>
                         <View style={styles.skillsList}>
                             <View style={styles.skillItem}>
 
                                 <Text style={styles.skillTitle}>Frontend:</Text>
-                                <Text>React JS, Redux Toolkit, Tailwind CSS, Material UI, HTML, CSS, JavaScript</Text>
+                                <Text style={styles.skillName}>React JS, Redux Toolkit, Tailwind CSS, Material UI, HTML, CSS, JavaScript</Text>
                             </View>
                             <View style={styles.skillItem}>
 
                                 <Text style={styles.skillTitle}>Backend:</Text>
-                                <Text> Node.js, Express</Text>
+                                <Text style={styles.skillName}> Node.js, Express</Text>
                             </View>
                             <View style={styles.skillItem}>
 
                                 <Text style={styles.skillTitle}>Tools & Libraries:</Text>
-                                <Text>ReactQuill, GSAP, Axios, React Hook Form, React PDF</Text>
+                                <Text style={styles.skillName}>ReactQuill, GSAP, Axios, React Hook Form, React PDF</Text>
                             </View>
                             <View style={styles.skillItem}>
 
                                 <Text style={styles.skillTitle}>Version Control:</Text>
-                                <Text>React JS, Redux Toolkit, Tailwind CSS, Material UI, HTML, CSS, JavaScript</Text>
+                                <Text style={styles.skillName}>React JS, Redux Toolkit, Tailwind CSS, Material UI, HTML, CSS, JavaScript</Text>
                             </View>
                             <View style={styles.skillItem}>
 
                                 <Text style={styles.skillTitle}>Database:</Text>
-                                <Text>MongoDB, MYSQL</Text>
+                                <Text style={styles.skillName}>MongoDB, MYSQL</Text>
                             </View>
                         </View>
                     </View>
 
                     {/* work experience */}
-                    <WorkExperience/>
+                    <WorkExperience />
 
                     {/* Education */}
-                    <Education/>
-                    <Project1/>
+                    <Education />
+                    <Project1 />
                 </View>
             </Page>
         </Document>
