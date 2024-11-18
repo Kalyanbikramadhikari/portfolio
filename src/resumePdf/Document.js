@@ -97,7 +97,8 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         gap: '5px',
         fontFamily: 'TimesNewRoman',
-        fontWeight: 'normal'
+        fontWeight: 'normal',
+        marginBottom:'1px'
     },
     skillTitle: {
         fontFamily: 'TimesNewRoman',
@@ -171,7 +172,7 @@ const ResumeDocument = () => (
                             <View style={styles.skillItem}>
 
                                 <Text style={styles.skillTitle}>Version Control:</Text>
-                                <Text style={styles.skillName}>React JS, Redux Toolkit, Tailwind CSS, Material UI, HTML, CSS, JavaScript</Text>
+                                <Text style={styles.skillName}>Git, Github</Text>
                             </View>
                             <View style={styles.skillItem}>
 

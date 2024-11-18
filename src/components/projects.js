@@ -34,7 +34,7 @@ const Project = () => {
     {
       pname: "Beer Website",
       description:
-        "This is my personal project working with animation built with react, tailwind and gsap.",
+        "  This personal project showcases an animated and interactive website for the Nepal Ice Beer brand, built using React, Tailwind CSS, and GSAP for smooth and captivating animations. This showcases scroll-triggered animations powered by GSAP . The website demonstrates modern web development practices with a focus on smooth user interactions and engaging visual elements.",
       imagesrc: '/assets/images/nepalice.png',
       ticket1: '/assets/images/react-ticket.png',
       // ticket2: '/assets/images/nodejs-ticket.png',
@@ -51,7 +51,7 @@ const Project = () => {
     },{
       pname: "Auditica",
       description:
-        "Auditica is a web application frontend design implementation trying to make an online music streaming application. ",
+        "Auditica is a sleek and modern web application frontend development prototype for an online music streaming platform. The project focuses on delivering a visually appealing interface that showcases a potential layout and design for a music streaming service. This is built using React and Tailwind CSS. ",
       imagesrc: '/assets/images/auditica.png',
       ticket1: '/assets/images/react-ticket.png',
       ticket2: '/assets/images/tailwind-ticket.png',
@@ -61,7 +61,7 @@ const Project = () => {
     },{
       pname: "Nike Website",
       description:
-        "Nike Website is the frontend design implementation of the popular shoe brand Nike ",
+        "The Nike Website is a front-end design implementation that showcases a modern and responsive web interface inspired by the popular shoe brand Nike. This project aims to develop better look and feel of an e-commerce platform for Nike sneakers, offering a visually appealing and user-friendly experience. Utilizing React for dynamic components and Tailwind CSS for styling, the website provides a clean, minimalist design, focusing on showcasing the Nike brand's premium products.",
       imagesrc: '/assets/images/nike.png',
       ticket1: '/assets/images/react-ticket.png',
       ticket2: '/assets/images/tailwind-ticket.png',

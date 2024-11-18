@@ -45,9 +45,9 @@ const styles = StyleSheet.create({
     description: {
         fontSize: '9px',
         fontFamily: 'TimesNewRoman',
-        fontWeight:'normal',
+        fontWeight: 'normal',
         // color: '#333',
-        marginTop:'5px',
+        marginTop: '5px',
     }
 });
 
@@ -66,8 +66,8 @@ const Education = () => (
                 <View>
                     <Text style={styles.institutionName}>Kathmandu University, Dhulikhel</Text>
                     <Text style={styles.description}>
-                        Relevant Courses: Data Structures, Algorithms, Web Development, Database Systems, Machine Learning.
-                        Graduated with a focus on full-stack development and software engineering principles.
+                        <Text style={{ fontFamily: 'TimesNewRoman', fontWeight: 'bold', }}>Relevant Courses: </Text>
+                        Data Structure & Algorithms, Database Systems, Machine Learning, Deep Learning & Neural Network, C, C++, .
                     </Text>
 
                 </View>

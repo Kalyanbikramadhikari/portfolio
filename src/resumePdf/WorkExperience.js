@@ -104,32 +104,39 @@ const WorkExperience = () => (
 
                     <View style={styles.bulletPoint}>
                         <Text style={styles.bullet}>•</Text>
-                        <Text style={styles.works}>Worked in data caching, reducing the multiple database hits from frontend by <Text style={{fontFamily: 'TimesNewRoman',fontWeight: 'bold',}}>40%</Text></Text>
+                        {/* <Text style={styles.works}>Worked in data caching, reducing the multiple database hits from frontend by <Text style={{ fontFamily: 'TimesNewRoman', fontWeight: 'bold', }}>40%</Text></Text> */}
+                        <Text style={styles.works}>
+                            Optimized data caching mechanisms, reducing frontend database requests by <Text style={{ fontFamily: 'TimesNewRoman', fontWeight: 'bold' }}>40%</Text>, resulting in faster data retrieval and enhanced user experience.
+                        </Text>
+
 
                     </View>
                     <View style={styles.bulletPoint}>
                         <Text style={styles.bullet}>•</Text>
-                        <Text style={styles.works}> Implemented debouncing for search and input field, reducing re-renders of the components by more than <Text style={{fontFamily: 'TimesNewRoman',fontWeight: 'bold',}}>200%</Text></Text>
+                        <Text style={styles.works}>
+                            Implemented debouncing techniques for search and input fields, reducing unnecessary component re-renders and database request by over <Text style={{ fontFamily: 'TimesNewRoman', fontWeight: 'bold' }}>200%</Text>, thereby improving application performance.
+                        </Text>
+                    </View>
+                    <View style={styles.bulletPoint}>
+                        <Text style={styles.bullet}>•</Text>
+                        <Text style={styles.works}>
+                            Collaborated closely with designers to develop applications achieving <Text style={{ fontFamily: 'TimesNewRoman', fontWeight: 'bold', }}>95%</Text> design-to-implementation accuracy.
+                        </Text>
+                    </View>
+                    <View style={styles.bulletPoint}>
+                        <Text style={styles.bullet}>•</Text>
+                        <Text style={styles.works}>
+                            Implemented pessimistic updates eliminating the need for manual page reloads and reducing dependency on the window reload function by <Text style={{ fontFamily: 'TimesNewRoman', fontWeight: 'bold' }}>100%</Text>.
+                        </Text>
+                    </View>
+                    <View style={styles.bulletPoint}>
+                        <Text style={styles.bullet}>•</Text>
+                        <Text style={styles.works}>Engineered a dynamic PDF generation system using reactPDF, based on client requirements, enhancing the client satisfaction by <Text style={{ fontFamily: 'TimesNewRoman', fontWeight: 'bold', }}>30%</Text></Text>
 
                     </View>
                     <View style={styles.bulletPoint}>
                         <Text style={styles.bullet}>•</Text>
-                        <Text style={styles.works}>Developed the applications with as given by designer and implemented transation effects <Text style={{fontFamily: 'TimesNewRoman',fontWeight: 'bold',}}>200%</Text></Text>
-
-                    </View>
-                    <View style={styles.bulletPoint}>
-                        <Text style={styles.bullet}>•</Text>
-                        <Text style={styles.works}>Implemented pessimistic updates and reducing manual reload of page on update or reduced the use of window function to reload by <Text style={{fontFamily: 'TimesNewRoman',fontWeight: 'bold',}}>100%</Text></Text>
-
-                    </View>
-                    <View style={styles.bulletPoint}>
-                        <Text style={styles.bullet}>•</Text>
-                        <Text style={styles.works}>Developed pdfs as per requirement and increasing the client satisfaction by <Text style={{fontFamily: 'TimesNewRoman',fontWeight: 'bold',}}>30%</Text></Text>
-
-                    </View>
-                    <View style={styles.bulletPoint}>
-                        <Text style={styles.bullet}>•</Text>
-                        <Text style={styles.works}>Implemented responsive designs across various devices and reduced device specific bugs by <Text style={{fontFamily: 'TimesNewRoman',fontWeight: 'bold',}}>60%</Text></Text>
+                        <Text style={styles.works}>Implemented responsive designs across multiple devices, reducing device-xspecific bugs by <Text style={{ fontFamily: 'TimesNewRoman', fontWeight: 'bold', }}>60%</Text></Text>
 
                     </View>
                 </View>
@@ -147,22 +154,22 @@ const WorkExperience = () => (
                 <View>
                     <View style={styles.bulletPoint}>
                         <Text style={styles.bullet}>•</Text>
-                        <Text style={styles.works} >Integrated responsive design principles and turned static web pages into dynamic ones, reducing device-specific bugs by <Text style={{fontFamily: 'TimesNewRoman',fontWeight: 'bold',}}>35%</Text></Text>
+                        <Text style={styles.works} >Integrated responsive design principles and turned static web pages into dynamic ones, reducing device-specific bugs by <Text style={{ fontFamily: 'TimesNewRoman', fontWeight: 'bold', }}>35%</Text></Text>
 
                     </View>
                     <View style={styles.bulletPoint}>
                         <Text style={styles.bullet}>•</Text>
-                        <Text style={styles.works}>Achieved a significant reduction of up to <Text style={{fontFamily: 'TimesNewRoman',fontWeight: 'bold',}}>40%</Text> in loading time by optimizing components and effectively using React lifecycle methods </Text>
+                        <Text style={styles.works}>Achieved a significant reduction of up to <Text style={{ fontFamily: 'TimesNewRoman', fontWeight: 'bold', }}>40%</Text> in loading time by optimizing components and effectively using React lifecycle methods </Text>
 
                     </View>
                     <View style={styles.bulletPoint}>
                         <Text style={styles.bullet}>•</Text>
-                        <Text style={styles.works}>Increased user experience by<Text style={{fontFamily: 'TimesNewRoman',fontWeight: 'bold',}}>30%</Text> using different React packages. </Text>
+                        <Text style={styles.works}>Increased user experience by<Text style={{ fontFamily: 'TimesNewRoman', fontWeight: 'bold', }}>30%</Text> using different React packages. </Text>
 
                     </View>
                     <View style={styles.bulletPoint}>
                         <Text style={styles.bullet}>•</Text>
-                        <Text style={styles.works}>Successfully applied Agile methodologies, especially [Sprint, Kanban], which increased task completion by<Text style={{fontFamily: 'TimesNewRoman',fontWeight: 'bold',}}>  45%.</Text></Text>
+                        <Text style={styles.works}>Successfully applied Agile methodologies, especially [Sprint, Kanban], which increased task completion by<Text style={{ fontFamily: 'TimesNewRoman', fontWeight: 'bold', }}>  45%.</Text></Text>
 
                     </View>
                     {/* <Text style={styles.works}>Developed pdfs as per requirement and increasing the client satisfaction by <Text>30%</Text></Text>
@@ -182,12 +189,12 @@ const WorkExperience = () => (
                 <View>
                     <View style={styles.bulletPoint}>
                         <Text style={styles.bullet}>•</Text>
-                        <Text style={styles.works}>Developed <Text style={{fontFamily: 'TimesNewRoman',fontWeight: 'bold',}}>2 responsive websites</Text> compatible with mobile, PC, and tablet screens. </Text>
+                        <Text style={styles.works}>Developed <Text style={{ fontFamily: 'TimesNewRoman', fontWeight: 'bold', }}>2 responsive websites</Text> compatible with mobile, PC, and tablet screens. </Text>
 
                     </View>
                     <View style={styles.bulletPoint}>
                         <Text style={styles.bullet}>•</Text>
-                        <Text style={styles.works}>Introduced new plug-ins and extensions to make the website more usable and interactive, increasing satisfaction by <Text style={{fontFamily: 'TimesNewRoman',fontWeight: 'bold',}}>35%</Text></Text>
+                        <Text style={styles.works}>Introduced new plug-ins and extensions to make the website more usable and interactive, increasing satisfaction by <Text style={{ fontFamily: 'TimesNewRoman', fontWeight: 'bold', }}>35%</Text></Text>
 
                     </View>
                     <View style={styles.bulletPoint}>
