@@ -156,13 +156,18 @@ const ResumeDocument = () => (
                         <View style={styles.skillsList}>
                             <View style={styles.skillItem}>
 
-                                <Text style={styles.skillTitle}>Frontend:</Text>
-                                <Text style={styles.skillName}>React JS, Redux Toolkit, Tailwind CSS, Material UI, HTML, CSS, JavaScript</Text>
+                                <Text style={styles.skillTitle}>Frontend Development:</Text>
+                                <Text style={styles.skillName}>ReactJS, JavaScript, HTML5, CSS3, Redux Toolkit, Material UI, Tailwind CSS</Text>
                             </View>
                             <View style={styles.skillItem}>
 
-                                <Text style={styles.skillTitle}>Backend:</Text>
+                                <Text style={styles.skillTitle}>Backend Development:</Text>
                                 <Text style={styles.skillName}> Node.js, Express</Text>
+                            </View>
+                            <View style={styles.skillItem}>
+
+                                <Text style={styles.skillTitle}>Database Management:</Text>
+                                <Text style={styles.skillName}>MongoDB, MYSQL</Text>
                             </View>
                             <View style={styles.skillItem}>
 
@@ -174,11 +179,7 @@ const ResumeDocument = () => (
                                 <Text style={styles.skillTitle}>Version Control:</Text>
                                 <Text style={styles.skillName}>Git, Github</Text>
                             </View>
-                            <View style={styles.skillItem}>
-
-                                <Text style={styles.skillTitle}>Database:</Text>
-                                <Text style={styles.skillName}>MongoDB, MYSQL</Text>
-                            </View>
+                            
                         </View>
                     </View>
 
