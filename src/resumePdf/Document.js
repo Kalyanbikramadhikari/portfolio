@@ -157,7 +157,7 @@ const ResumeDocument = () => (
                             <View style={styles.skillItem}>
 
                                 <Text style={styles.skillTitle}>Frontend Development:</Text>
-                                <Text style={styles.skillName}>ReactJS, JavaScript, HTML5, CSS3, Redux Toolkit, Material UI, Tailwind CSS</Text>
+                                <Text style={styles.skillName}>ReactJS, JavaScript, HTML5, CSS3, Redux Toolkit, Material UI, Tailwind CSS,Async/Await</Text>
                             </View>
                             <View style={styles.skillItem}>
 
@@ -178,6 +178,11 @@ const ResumeDocument = () => (
 
                                 <Text style={styles.skillTitle}>Version Control:</Text>
                                 <Text style={styles.skillName}>Git, Github</Text>
+                            </View>
+                            <View style={styles.skillItem}>
+
+                                <Text style={styles.skillTitle}>Other Skills:</Text>
+                                <Text style={styles.skillName}>Ability to write clean,modern,testable & well documented code,Advanced english fluency, Professional, empathic & team player, Problem solver</Text>
                             </View>
                             
                         </View>

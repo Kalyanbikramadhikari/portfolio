@@ -114,7 +114,8 @@ const WorkExperience = () => (
                     <View style={styles.bulletPoint}>
                         <Text style={styles.bullet}>•</Text>
                         <Text style={styles.works}>
-                            Implemented debouncing techniques for search and input fields, reducing unnecessary component re-renders and database request by over <Text style={{ fontFamily: 'TimesNewRoman', fontWeight: 'bold' }}>200%</Text>, thereby improving application performance.
+                            Improved application responsiveness by reducing component re-renders and database requests by <Text style={{ fontFamily: 'TimesNewRoman', fontWeight: 'bold' }}>200% using debouncing techniques.</Text>
+                            {/* Implemented debouncing techniques for search and input fields, reducing unnecessary component re-renders and database request by over <Text style={{ fontFamily: 'TimesNewRoman', fontWeight: 'bold' }}>200%</Text>, thereby improving application performance. */}
                         </Text>
                     </View>
                     <View style={styles.bulletPoint}>

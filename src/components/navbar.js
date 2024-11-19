@@ -15,7 +15,7 @@ const Navbar = () => {
 
 
 
-      <div className='hidden md:block md:flex md:items-start md:justify-start md:flex-row md:gap-y-4 '>
+      <div className='hidden md:items-start md:justify-start md:flex-row md:gap-y-4 '>
         <div className="flex flex-col gap-x-16 font-medium md:flex md:flex-row">
         <Link
             to="aboutme"
