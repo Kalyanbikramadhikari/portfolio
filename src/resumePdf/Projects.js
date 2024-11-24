@@ -122,7 +122,7 @@ const Project1 = () => (
         </View>
 
 
-        <View style={{ marginTop: '5px' }}>
+        <View style={{ marginTop: '20px' }} wrap={false} >
             <Text style={styles.projectTitle}>Project 2 [exploreLive]</Text>
 
             <View>

@@ -7,6 +7,7 @@ import { Page, Text, View, Document, StyleSheet, PDFViewer, Image, Font } from '
 import WorkExperience from './WorkExperience';
 import Education from './Education';
 import Project1 from './Projects';
+import ProfessionalSummary from './ProfessionalSummary';
 
 Font.register({
     family: 'TimesNewRoman',
@@ -80,7 +81,8 @@ const styles = StyleSheet.create({
         // fontSize:'12px',
         fontFamily: 'TimesNewRoman',
         fontWeight: 'bold',
-        fontSize: '16px'
+        fontSize: '16px',
+        marginTop: '5px',
 
     },
     skillsList: {
@@ -98,7 +100,7 @@ const styles = StyleSheet.create({
         gap: '5px',
         fontFamily: 'TimesNewRoman',
         fontWeight: 'normal',
-        marginBottom:'1px'
+        marginBottom: '1px'
     },
     skillTitle: {
         fontFamily: 'TimesNewRoman',
@@ -148,6 +150,14 @@ const ResumeDocument = () => (
                             </View>
                         </View>
                     </View>
+
+
+                    {/* Professional Summary section */}
+                    <ProfessionalSummary />
+
+
+
+
                     {/* Skills Section */}
                     <View>
                         {/* <Text styles={{fontFamily:'TimesNewRoman', fontWeight:'bold', fontSize:'5px'}}>Skills</Text> */}
@@ -156,8 +166,8 @@ const ResumeDocument = () => (
                         <View style={styles.skillsList}>
                             <View style={styles.skillItem}>
 
-                                <Text style={styles.skillTitle}>Frontend Development:</Text>
-                                <Text style={styles.skillName}>ReactJS, JavaScript, HTML5, CSS3, Redux Toolkit, Material UI, Tailwind CSS,Async/Await</Text>
+                                <Text style={styles.skillTitle}>Frontend Development :</Text>
+                                <Text style={styles.skillName}>ReactJS, JavaScript, HTML5, CSS, Redux Toolkit, Tailwind CSS,Async/Await, Responsive Design, Web Performance Optimization</Text>
                             </View>
                             <View style={styles.skillItem}>
 
@@ -170,9 +180,15 @@ const ResumeDocument = () => (
                                 <Text style={styles.skillName}>MongoDB, MYSQL</Text>
                             </View>
                             <View style={styles.skillItem}>
+                                <Text style={styles.skillTitle}>Programming & Programming Languages:</Text>
+                                <Text style={styles.skillName}>
+                                    JavaScript, C, C++
+                                </Text>
+                            </View>
+                            <View style={styles.skillItem}>
 
                                 <Text style={styles.skillTitle}>Tools & Libraries:</Text>
-                                <Text style={styles.skillName}>ReactQuill, GSAP, Axios, React Hook Form, React PDF</Text>
+                                <Text style={styles.skillName}>ReactQuill, GSAP, Axios, React PDF</Text>
                             </View>
                             <View style={styles.skillItem}>
 
@@ -182,9 +198,9 @@ const ResumeDocument = () => (
                             <View style={styles.skillItem}>
 
                                 <Text style={styles.skillTitle}>Other Skills:</Text>
-                                <Text style={styles.skillName}>Ability to write clean,modern,testable & well documented code,Advanced english fluency, Professional, empathic & team player, Problem solver</Text>
+                                <Text style={styles.skillName}>Good communication, Creative thinking, Integrating API,Hooks, Web Performance </Text>
                             </View>
-                            
+
                         </View>
                     </View>
 
