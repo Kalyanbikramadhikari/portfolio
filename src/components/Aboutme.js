@@ -28,7 +28,7 @@ const Aboutme = () => {
                     <h2 className="text-2xl font-semibold text-gray-800 mb-4 ">Kalyan Bikram Adhikari .</h2>
 
                     <span className='w-full'>
-                        I am a frontend developer with over 1.5 years of professional experience, specializing in building high-performance web applications. My focus is on delivering fast, responsive, and user-friendly experiences for your projects.
+                        I am a frontend developer with over 2 years of professional experience, specializing in building high-performance web applications. My focus is on delivering fast, responsive, and user-friendly experiences for your projects.
                     </span>
                     <p className='w-full'>
                         I hold a Bachelor's degree in Computer Science from Kathmandu University, with prior education at Nepal Police Secondary Boarding School. Every day, I wake up with the mindset to excel and write clean, efficient code.

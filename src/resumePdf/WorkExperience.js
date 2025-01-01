@@ -95,7 +95,7 @@ const WorkExperience = () => (
                 <View>
                     <View style={styles.WorkPlace}>
                         <Text style={styles.CompanyName}>TechGlazers Pvt. Ltd.</Text>
-                        <Text style={styles.dates}>Jun 2024 - PRESENT</Text>
+                        <Text style={styles.dates}>Jun 2024 - Dec 2024</Text>
                     </View>
                     <Text style={styles.designation}>Frontend Developer</Text>
                 </View>

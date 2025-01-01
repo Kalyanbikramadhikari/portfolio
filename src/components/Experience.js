@@ -79,7 +79,7 @@ const WorkExperience = () => {
                                 {exp.date.includes("PRESENT") ? (
                                     <>
                                         {exp.date.split("PRESENT")[0]}
-                                        <span className="text-green-500 font-semibold">PRESENT</span>
+                                        <span className="text-green-500 font-semibold">Dec 2024</span>
                                     </>
                                 ) : (
                                     exp.date
